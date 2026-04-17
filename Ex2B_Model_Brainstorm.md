@@ -42,7 +42,9 @@ last_name VARCHAR
 phone_number - VARCHAR
 <br>
 email_address - VARCHAR
-<br>
+<br?
+
+# questions
 
 a) What should be the main entities in your database (which will translate into tables)? Aim for at least three, but not more than five, to keep things from getting overly complicated.
 <br>
@@ -53,13 +55,17 @@ b) What attributes (column names) belong to each of those entities? It may be he
 to consider an example of a single record belonging to that entity – what are the
 pieces of information that the record should include?
 <br>
+<br>
 dogs: name, breed, steps, size and owner(customer_name) name
 customer: Client ID, first name, last name, phone number and email
 walker: walker ID, first name, last name, phone number, email
 <br>
+<br>
 c) What entities will have relationships to each other? That is, what information will need to be reassembled together when data is retrieved from the database?
 <br>
+<br>
 the dog and customer entities will have relationships with each other, the information will be the owners name and the dogs name to find the connection between which customer owns the dog and which dog is the customers pet.
+<br>
 <br>
 d) Can you identify any possible many-to-many relationships between your tables
 that will need to a resolving table?
