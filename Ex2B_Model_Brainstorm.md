@@ -14,15 +14,13 @@ dog_name - VARCHAR(20) - chip
 <br>
 steps in a day - INT - 10 
 <br>
-size(small, medium,large) - VARCHAR() 
-<br>
 weight - FLOAT 10.5
 <br>
 customers_name - FOREIGN KEY
 
 ## customer Table
 Client_ID PRIMARY_KEY
-
+<br>
 first_name - VARCHAR
 <br>
 last_name VARCHAR
@@ -35,6 +33,7 @@ Dog - FOREIGN KEY
 
 ## Walkers Table
 walker_ID PRIMARY KEY
+<br>
 first_name - VARCHAR
 <br>
 last_name VARCHAR
@@ -42,7 +41,25 @@ last_name VARCHAR
 phone_number - VARCHAR
 <br>
 email_address - VARCHAR
-<br?
+<br>
+
+## Walks Table
+
+walk_ID PRIMARY KEY
+<br>
+walk_date DATE
+<br>
+walk_time TIME
+<br>
+duration - FLOAT
+<br>
+status - VARCHAR
+<br>
+<br>
+dog_ID - FOREIGN KEY
+<br>
+Walker_ID FOREIGN KEY
+<br>
 
 # questions
 

@@ -1,0 +1,56 @@
++----------------+          +----------------+          +----------------+
+|    Clients     |          |      Dogs      |          |    Walkers     |
++----------------+          +----------------+          +----------------+
+| ClientID (PK)  |1        N| DogID (PK)     |          | WalkerID (PK)  |
+| FirstName      |----------| Name           |          | FirstName      |
+| LastName       |          | Breed          |          | LastName       |
+| PhoneNumber    |          | Age            |          | PhoneNumber    |
+| Email          |          | weight         |          | Email          |
+| Email          |          | Client_name(Fk)|          +----------------+
++----------------+          +----------------+                     |
+         |                              |                          |
+         |                              |                          |
+         |                              |                          |
+         |                              N                          N
+         |                              |                          |
+         |                           +----------------+           |
+         +---------------------------|      Walks     |-----------+
+                                     +----------------+
+                                     | WalkID (PK)    |
+                                     | WalkDate       |
+                                     | WalkTime       |
+                                     | Duration       |
+                                     | Status         |
+                                     | DogID (FK)     |
+                                     | WalkerID (FK)  |
+                                     +----------------+
+                                    
+
+Grok feedback:
+
+Honest Feedback on Your Table Structure
+Overall: Excellent for beginners!
+Your design is simple, clean, and realistic. Four tables is the perfect number — not too overwhelming, but enough to show real relationships. This is exactly the kind of model teachers love to see in Week 2.
+What’s really good:
+
+You correctly identified the many-to-many between Dogs and Walkers and used Walks as the resolving table.
+Foreign keys (ClientID, DogID, WalkerID) are placed correctly.
+The Walks table holds useful attributes about each walk (date, time, status, notes).
+You kept optional fields (like Address and Notes) which is smart.
+
+Minor suggestions / possible missing attributes (optional for now):
+
+Payments table – Not needed yet, but you could easily add it later (connected to Clients or Walks).
+In the Dogs table, consider adding BirthDate instead of just Age (age changes every year; birthdate is more permanent).
+In the Walks table, you might want a CompletedDateTime column later so you can record the exact time the walker finished the walk.
+Consider making Duration a number (30, 45, 60) instead of text — easier for calculations later.
+
+Real-life usage examples:
+
+Lana can query: “Show me all walks scheduled for tomorrow” → look in the Walks table.
+“Which dogs does client Sarah Johnson own?” → join Clients → Dogs.
+“How many walks did Lana do last week?” → filter Walks by WalkerID and WalkDate.
+“What dogs need walks today?” → simple query on Walks where Status = ‘Scheduled’.
+Later when you add payments, you can easily calculate how much a client owes based on completed walks.
+
+This model would let Lana run her business without chaos — no double-booking walkers, easy client contact info, and clear records of every walk.
