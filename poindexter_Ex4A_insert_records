@@ -1,0 +1,58 @@
+USE lana_dog_walking;
+
+INSERT INTO categories (category_code, event_category)
+VALUES
+(1, 'Art'),
+(2, 'Comedy'),
+(3, 'Conference'),
+(4, 'Festival'),
+(5, 'Film'),
+(6, 'Literary'),
+(7, 'Music');
+
+INSERT INTO managers (employee_id, manager_name, mgr_email)
+VALUES
+('u0156', 'Larry Song', 'larry.song@eventdoodle.com'),
+('u1023', 'Sarah Mitchell', 'sarah.mitchell@eventdoodle.com'),
+('u0561', 'Mike Chen', 'mike.chen@eventdoodle.com'),
+('u0865', 'Elena Rodriguez', 'elena.rodriguez@eventdoodle.com'),
+('u0422', 'David Park', 'david.park@eventdoodle.com'),
+('u0187', 'Jennifer Wu', 'jennifer.wu@eventdoodle.com');
+
+INSERT INTO venues (venue_id, venue_location, location_address, location_city, location_state, location_zip)
+VALUES
+('Starlight_CA', 'Starlight Bar', '1847 Sunset Boulevard', 'Los Angeles', 'CA', '90026'),
+('RivAmp_TX', 'Riverside Amphitheater', '3250 Riverside Drive', 'Austin', 'TX', '78741'),
+('LafFctry_CA', 'The Laugh Factory', '8001 Sunset Boulevard', 'West Hollywood', 'CA', '90046'),
+('DtwnCon_IL', 'Downtown Convention Center', '1201 Convention Plaza', 'Chicago', 'IL', '60616'),
+('CafeB_NY', 'Café Bohème', '428 Greenwich Avenue', 'New York', 'NY', '10011'),
+('MetroCin_OR', 'Metro Cinema', '2847 Broadway Street', 'Portland', 'OR', '97214'),
+('GrBall_MI', 'Grand Ballroom Hotel', '500 Michigan Avenue', 'Detroit', 'MI', '48226'),
+('ComCor_NY', 'Comedy Corner Club', '156 Bleecker Street', 'New York', 'NY', '10012'),
+('GallDst_FL', 'Gallery District', '975 Art Walk Lane', 'Miami', 'FL', '33132');
+
+INSERT INTO events (event_id, event_name, event_date, category_code, employee_id, venue_id)
+VALUES
+(102, 'Starlight Showcase', '2026-03-14', 7, 'u0156', 'Starlight_CA'),
+(103, 'Summer Jazz Festival', '2026-06-21', 7, 'u1023', 'RivAmp_TX'),
+(104, 'Comedy Night Live', '2026-04-03', 2, 'u0561', 'LafFctry_CA'),
+(105, 'Tech Innovation Summit', '2026-05-15', 3, 'u1023', 'DtwnCon_IL'),
+(106, 'Sunset Poetry Reading', '2026-03-28', 6, 'u0865', 'CafeB_NY'),
+(107, 'Spring Food & Wine Expo', '2026-04-18', 4, 'u0422', 'DtwnCon_IL'),
+(108, 'Indie Film Showcase', '2026-05-02', 5, 'u0561', 'MetroCin_OR'),
+(109, 'Corporate Leadership Forum', '2026-06-08', 3, 'u0187', 'GrBall_MI'),
+(110, 'Blues & BBQ Night', '2026-07-12', 7, 'u1023', 'Starlight_CA'),
+(111, 'Stand-Up Saturdays', '2026-03-21', 2, 'u0561', 'ComCor_NY'),
+(112, 'Art Walk Opening', '2026-04-25', 1, 'u0865', 'GallDst_FL');
+
+SELECT * 
+FROM categories;
+
+SELECT * 
+FROM managers;
+
+SELECT * 
+FROM venues;
+
+SELECT * 
+FROM events;
