@@ -1,7 +1,7 @@
 +----------------+          +----------------+          +----------------+
-|    Clients     |          |      Dogs      |          |    Walkers     |
+|    Customer    |          |      Dogs      |          |    Walkers     |
 +----------------+          +----------------+          +----------------+
-| ClientID (PK)  |1        N| DogID (PK)     |          | WalkerID (PK)  |
+| CustomerID (PK)|1        N| DogID (PK)     |          | WalkerID (PK)  |
 | FirstName      |----------| Name           |          | FirstName      |
 | LastName       |          | Breed          |          | LastName       |
 | PhoneNumber    |          | Age            |          | PhoneNumber    |
