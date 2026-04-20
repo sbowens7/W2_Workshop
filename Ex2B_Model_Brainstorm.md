@@ -87,3 +87,45 @@ the dog and customer entities will have relationships with each other, the infor
 d) Can you identify any possible many-to-many relationships between your tables
 that will need to a resolving table?
 the dog and walkers entities will have a many-to-many relationships, many dogs can have many walkers, and many walkers can have many dogs, they will not need a resolving table in our opinion.
+
+## question 4
+Reconvene with your small group and take turns reviewing each of your diagrams.
+Have one person open Ex2B_Model_Brainstorm.md and take notes on your group’s
+conversation as you discuss the question below.
+<br>
+<br>
+a) What are the similarities between individual diagrams? What turned out the same?
+<br>
+we all pretty much got the same Customer and walker table
+<br>
+<br>
+b) Where did each of your diagrams differ? What explanation do you have for those
+differences? What might be the pros and cons of each approach?
+<br>
+<br>
+Me (Jimmy), Will, Shaq and shay all had different Dog tables, mostly the same but Will added special_notes column and Shaq added steps in a day.
+<br>
+<br>
+Pros and Cons of Wills table:
+<br>
+he added 'Payment' would be a good table to have, a con would be that I dont think we really need special notes for the dog. 
+<br>
+<br>
+pros of Shaqs Table:
+<br>
+Shaq is pretty much the same as mine but he has steps per day, thats a good pro but I feel like maybe we both could have added more.
+<br>
+<br>
+pros and cons of Shaqs Table:
+<br>
+Shaq is pretty much the same as mine but he has steps per day, thats a good pro but I feel like maybe we both could have added more.
+<br>
+<br>
+pros and cons Shays Table:
+<br>
+Shays is pretty much the same as as mine and shaqs as well but she added start_date for walkers, distance_miles for walks table and a couple other columns in the other two tables she added, the steps in a day for the dog table is a good pro but I feel like we didnt need the chop column.
+<br>
+<br>
+pros and cons my (Jimmy) Table:
+<br>
+Mine is probalby the most basic one with the least amount of columns as to keep it minimalist, but I could have added a couple more columns related to age for the dog and I liked the idea of adding an emergency contact from shays, pros of simplicity but it is also a con since it could have more I think, so the simpleness is a pro and a con.
