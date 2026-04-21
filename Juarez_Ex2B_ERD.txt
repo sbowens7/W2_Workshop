@@ -1,12 +1,12 @@
 +----------------+          +----------------+          +----------------+
-|    Customer    |          |      Dogs      |          |    Walkers     |
+|    Customers   |          |      Dogs      |          |    Walkers     |
 +----------------+          +----------------+          +----------------+
 | CustomerID (PK)|1        N| DogID (PK)     |          | WalkerID (PK)  |
 | FirstName      |----------| Name           |          | FirstName      |
 | LastName       |          | Breed          |          | LastName       |
 | PhoneNumber    |          | Age            |          | PhoneNumber    |
 | Email          |          | weight         |          | Email          |
-| Email          |          | Client_name(Fk)|          +----------------+
+|                |          | Client_name(Fk)|          +----------------+
 +----------------+          +----------------+                     |
          |                              |                          |
          |                              |                          |
